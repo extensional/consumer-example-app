@@ -1,4 +1,5 @@
 import { IInteractionConsumerPrompt } from "@-anarchy-/config";
+import "./ChatInteraction.scss";
 
 interface ChatInteractionAttrs {
     interaction: IInteractionConsumerPrompt;

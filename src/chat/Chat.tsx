@@ -1,6 +1,7 @@
 import { IInteractionConsumerPrompt } from "@-anarchy-/config";
 import { useEffect, useState } from "react";
 import { ChatInteraction } from "./ChatInteraction";
+import "./Chat.scss";
 
 interface ChatAttrs {
     messages: IInteractionConsumerPrompt[];
@@ -18,7 +19,11 @@ export const Chat = ({ messages, onSubmit, loading }: ChatAttrs): JSX.Element =>
 
     const handleTextSubmit = (e: any): void => {
         e.preventDefault();
-        onSubmit(promptQuery);
+        if (promptQuery) {
+            onSubmit(promptQuery);
+        } else {
+            console.error("please enter a message")
+        }
     }
     return (
         <>
@@ -33,14 +38,15 @@ export const Chat = ({ messages, onSubmit, loading }: ChatAttrs): JSX.Element =>
                 }
             </div>
 
-            <form onSubmit={handleTextSubmit}>
+            <form onSubmit={handleTextSubmit} className="form">
                 <input
                     type="text"
                     autoFocus
+                    className="input"
                     value={promptQuery}
                     onChange={e => setPromptQuery(e.target.value)}
                 />
-                <button type="submit">send</button>
+                <button type="submit" className="send-message" disabled={!promptQuery}>send</button>
             </form>
         </>
     )

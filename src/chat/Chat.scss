@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+}
+%borders {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: filter .3s, border .3s;
+    &:focus, &:focus-visible, &:focus-within, &:active {
+        outline: none;
+        filter: drop-shadow(3px 1px 4px #aaa);
+    }
+}
+.input {
+    @extend %borders;
+    flex-grow: 1;
+    line-height: 2rem;
+    height: 3rem;
+    padding: .5rem;
+}
+.send-message {
+    @extend %borders;
+    margin-left: 1rem;
+    background-color: transparent;
+    // 
+}

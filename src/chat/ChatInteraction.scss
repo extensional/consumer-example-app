@@ -1,12 +1,22 @@
 .interaction {
-    .interaction-bubble {
+    display: flex;
+    flex-direction: column;
 
+    .interaction-bubble {
+        border-radius: 1rem;
+        padding: 1rem;
+        filter: drop-shadow(3px);
+        max-width: 60%;
+        width: max-content;
+        margin-bottom: 1rem;
 
         &.my {
-
+            align-self: flex-end;
+            background-color: khaki;
         }
         &.ai {
-            
+            align-self: flex-start;
+            background-color: bisque;
         }
     }
 }
