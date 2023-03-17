@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 3rem;
+    --content-width: 60rem;
+    --content-padding: 3rem;
+    --header-body-padding: 2rem;
+    --header-bg: #eaeaea;
+}

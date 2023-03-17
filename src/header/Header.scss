@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0 var(--content-padding);
+    top: 0px;
+    height: var(--header-height);
+    background: var(--header-bg);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+}
