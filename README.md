@@ -4,14 +4,22 @@ An example app using the consumer package for chat.dev
 
 ## INSTALLATION
 
-1. Clone
-```https://github.com/extensional/consumer-example-app.git```
-2. `cd` to folder
-```cd consumer-example-app```
-3. install
-```npm i```
-4. run
-```npm run start```
+1. Clone  
+```
+https://github.com/extensional/consumer-example-app.git
+```
+2. `cd` to folder  
+```
+cd consumer-example-app
+```
+3. install  
+```
+npm i
+```
+4. run  
+```
+npm run start
+```
 
 ## USAGE
 
