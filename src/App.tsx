@@ -3,6 +3,7 @@ import './App.scss';
 import { ListOfExamples } from './ListOfExamples';
 import { Header } from './header/Header';
 import { routes } from './routes';
+import { Landing } from './landing/Landing';
 
 function App() {
     return (
@@ -11,7 +12,8 @@ function App() {
                 <Header />
                 <div className="app-content">
                     <Routes>
-                        <Route path='/' element={<ListOfExamples />} />
+                        <Route path='/' element={<Landing />} />
+                        <Route path='/examples' element={<ListOfExamples />} />
                         {
                             routes.map(r =>
                                 <Route key={r.path} path={r.path} element={r.element} />

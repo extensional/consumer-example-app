@@ -12,11 +12,11 @@
 
         &.my {
             align-self: flex-end;
-            background-color: khaki;
+            background-color: rgba(#dfe6e9, 0.4);
         }
         &.ai {
             align-self: flex-start;
-            background-color: bisque;
+            background-color: rgba(#0984e3, 0.4);
         }
     }
 }

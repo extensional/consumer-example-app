@@ -1,3 +1,11 @@
+.chat-container {
+    height: calc(100vh - (var(--header-height) + var(--content-padding)));
+    display: flex;
+    flex-direction: column;
+}
+.chat {
+    flex-grow: 1;
+}
 .form {
     display: flex;
     flex-direction: row;
@@ -16,13 +24,14 @@
 .input {
     @extend %borders;
     flex-grow: 1;
-    line-height: 2rem;
-    height: 3rem;
-    padding: .5rem;
+    background-color: var(--white);
+    // line-height: 2rem;
+    // height: 3rem;
+    // padding: .5rem;
 }
 .send-message {
     @extend %borders;
     margin-left: 1rem;
-    background-color: transparent;
+    background-color: var(--white);
     // 
 }

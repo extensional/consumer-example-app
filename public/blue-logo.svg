@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49.965" height="49.965" viewBox="50 50 700 700">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #00b1c8;
+      }
+
+      .cls-1 {
+        stroke-width: 90px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke-width: 55px;
+      }
+
+      .cls-3 {
+        stroke-width: 60px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="400.906" cy="401" r="301.344"/>
+  <path id="Line_2" data-name="Line 2" class="cls-2" d="M501.812,385.537v1.555H99.157v-1.555H501.812Z"/>
+  <path id="Triangle_1" data-name="Triangle 1" class="cls-3" d="M400.5,173.906L602.844,524.031H198.156Z"/>
+</svg>

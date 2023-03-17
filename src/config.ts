@@ -7,8 +7,8 @@ interface IConsumerConfig {
 }
 
 export const CONSUMER_CONFIG: IConsumerConfig & Record<string, any> = {
-    openAIApiKey: "OPENAI_API",
-    chatDevConsumerApiKey: "CHAT.DEV/SETTINGS API KEY",
-    myBotSecret: "4OYZy1ZzsYDyzOJezroz",
-    debug: { debugUrl: "http://localhost:3000/api" }
+    openAIApiKey: "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",
+    chatDevConsumerApiKey: "cd-sk-pjwnBUMkiq8ESHdZXn6q",
+    myBotSecret: "1IkmxFNppmCuuqWLamVb",
+    debug: { debugUrl: "http://localhost:3050/api" }
 };
