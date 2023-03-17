@@ -1,5 +1,6 @@
-import { Code } from "@mui/icons-material";
-import { Fab, Dialog, DialogTitle, DialogContent } from "@mui/material";
+import { ManageSearch } from "@mui/icons-material";
+import { Dialog, DialogContent, DialogTitle, Fab } from "@mui/material";
+import { IInteractionConsumerPrompt } from "@-anarchy-/config";
 import { useState } from "react";
 
 interface ChatDebugDialogAttrs {
@@ -20,13 +21,14 @@ export const ChatDebugDialog = ({ debugInfo }: ChatDebugDialogAttrs): JSX.Elemen
                 <Fab
                     className="open-debug"
                     onClick={() => setDialogOpen(true)}
+                    title={`debug last message`}
                     sx={{
                         position: "fixed",
                         right: "1rem",
                         bottom: "1rem",
                     }}
                 >
-                    <Code />
+                    <ManageSearch />
                 </Fab>
             }
             <Dialog open={dialogOpen} onClose={handleCloseDialog} maxWidth="xl">
